@@ -1,0 +1,153 @@
+@media screen and (max-width: 991px) {
+  .header-top {
+    display: none;
+  }
+  .responsive-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-banner {
+    display: block;
+  }
+
+  .mabile-banner-text {
+    width: 100%;
+    padding-top: 25px;
+  }
+  .mabile-banner-text h3,
+  .mabile-banner-text h1 {
+    font-size: 24px;
+  }
+  .mabile-banner-text p {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .mobile-banner-span {
+    font-weight: 300;
+    font-size: 29px;
+  }
+  .mobile-playstation {
+    display: block;
+  }
+  .wide-squre {
+    width: 100%;
+  }
+  .wide-squre-bottom-left {
+    width: 100%;
+  }
+  .wide-squre-bottom-right {
+    width: 100%;
+  }
+  .big-banner {
+    width: 100%;
+  }
+  .category {
+    display: flex;
+    width: 98%;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .category-card {
+    display: flex;
+
+    gap: 10px 24px;
+
+    flex-wrap: wrap;
+    width: 70%;
+
+    .desktop-products {
+      width: 100%;
+      display: flex;
+      padding: 56px 160px;
+      flex-direction: column;
+      gap: 32px;
+      background: #fff;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .subnav {
+      padding: 8px 20px; /* Adjust the padding as needed */
+    }
+    .mobile-banner-text {
+      display: inline;
+    }
+    .mabile-banner-text p {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    .wide-squre1 {
+      display: block;
+    }
+    .wide-squre-bottom-right {
+      display: block;
+    }
+    .wide-squre-bottom-left {
+      display: block;
+    }
+    .big-banner {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .container {
+      padding: 16px 24px;
+    }
+
+    .mobile-banner {
+      padding: 24px 16px;
+    }
+
+    .mabile-banner-text {
+      padding-top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+    .subnav {
+      display: none;
+    }
+    .wide-squre {
+      display: flex;
+
+      flex-direction: column-reverse;
+    }
+    .wide-squre1 {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 16px;
+      gap: 24px;
+    }
+    .wide-squre-bottom {
+      display: flex;
+      flex-direction: column;
+    }
+    .wide-squre-bottom-left {
+      display: flex;
+      padding: 40px 16px;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .wide-squre-bottom-right {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 16px;
+      gap: 24px;
+      align-items: center;
+    }
+    .big-banner {
+      display: flex;
+      padding: 40px 16px;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+    }
+    .big-banner-text {
+      align-items: center;
+    }
+  }
+}
