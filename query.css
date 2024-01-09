@@ -10,22 +10,6 @@
     display: block;
   }
 
-  .mabile-banner-text {
-    width: 100%;
-    padding-top: 25px;
-  }
-  .mabile-banner-text h3,
-  .mabile-banner-text h1 {
-    font-size: 24px;
-  }
-  .mabile-banner-text p {
-    font-size: 24px;
-    line-height: 24px;
-  }
-  .mobile-banner-span {
-    font-weight: 300;
-    font-size: 29px;
-  }
   .mobile-playstation {
     display: block;
   }
@@ -96,18 +80,125 @@
     }
 
     .mobile-banner {
-      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+
+      padding: 88px 16px 0px 16px;
+      gap: 48px;
     }
 
     .mabile-banner-text {
-      padding-top: 0px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 30px;
+
+      width: 100%;
+      gap: 32px;
+    }
+    .mobile-banner-text h3 {
+      color: #fff;
+      text-align: center;
+      font-family: Figtree;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 128% */
+      opacity: 0.4;
+    }
+    .mobile-banner-text h1 {
+      text-align: center;
+
+      font-size: 72px;
+
+      line-height: 72px;
+      letter-spacing: -0.72px;
+    }
+    .mobile-banner-span {
+      text-align: center;
+
+      font-size: 72px;
+
+      line-height: 72px;
+      letter-spacing: -0.72px;
+      padding-left: 152px;
+    }
+    .mobile-banner-text p {
+      text-align: center;
+
+      font-size: 19px;
+
+      line-height: 24px; /* 126.316% */
+    }
+    .mobile-banner-btn {
+      padding: 16px 40px;
+    }
+    .Iphone-btn {
+      font-size: 13px;
+    }
+    .mobile-banner-img {
+      width: 100%;
+
+      padding: 0px 11px;
     }
     .subnav {
       display: none;
+    }
+    .category {
+      display: flex;
+      width: 100%;
+      padding: 64px 16px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 48px;
+    }
+    .category-card {
+      width: 100%;
+    }
+    .category .imgs {
+      padding: 0px;
+    }
+    .desktop-prodcuts {
+      display: flex;
+      padding: 56px 16px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      align-self: stretch;
+    }
+    .desktop-pair-products-iphone {
+      width: 46%;
+    }
+    .discount-products {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 56px 16px;
+    }
+    .Big-Banner-watch-products1 {
+      display: none;
+    }
+    .Big-Banner-watch-products2 {
+      display: flex;
+      width: 100%;
+
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+    .Big-Banner-text {
+      align-items: center;
+    }
+    .Big-Banner-watch-products3 {
+      display: none;
+    }
+    .Big-Banner-watch-products4 {
+      display: none;
+    }
+    .desktop-footer {
+      width: 100%;
+      gap: 32px;
+
+      padding: 48px 32px;
     }
     .wide-squre {
       display: flex;
@@ -144,10 +235,27 @@
       justify-content: center;
       align-items: center;
       gap: 24px;
-      align-self: stretch;
     }
     .big-banner-text {
       align-items: center;
     }
+  }
+  .desktop-footer-imgtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .footer-imgtext {
+    align-items: center;
+  }
+  .footer-services {
+    align-items: center;
+  }
+  .footer-assistant {
+    align-items: center;
+  }
+  .desktop-footer-icon {
+    width: 238px;
   }
 }
