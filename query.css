@@ -97,7 +97,7 @@
     }
     .mobile-banner-text h3 {
       color: #fff;
-      text-align: center;
+      /* text-align: center; */
       font-family: Figtree;
       font-size: 25px;
       font-style: normal;
@@ -105,8 +105,8 @@
       line-height: 32px; /* 128% */
       opacity: 0.4;
     }
-    .mobile-banner-text h1 {
-      text-align: center;
+    .mabile-banner-text h1 {
+       text-align: center; 
 
       font-size: 72px;
 
@@ -114,20 +114,24 @@
       letter-spacing: -0.72px;
     }
     .mobile-banner-span {
-      text-align: center;
+      /* text-align: center; */
 
       font-size: 72px;
 
       line-height: 72px;
       letter-spacing: -0.72px;
-      padding-left: 152px;
     }
-    .mobile-banner-text p {
-      text-align: center;
-
+    .mabile-banner-text p {
       font-size: 19px;
 
       line-height: 24px; /* 126.316% */
+      font-size: 19px;
+      line-height: 24px;
+      color: #909090;
+      text-align: center;
+      font-weight: 500;
+      font-style: normal;
+    }
     }
     .mobile-banner-btn {
       padding: 16px 40px;
@@ -197,6 +201,7 @@
     .desktop-footer {
       width: 100%;
       gap: 32px;
+      align-items: center;
 
       padding: 48px 32px;
     }
@@ -227,6 +232,17 @@
       padding: 40px 16px;
       gap: 24px;
       align-items: center;
+    }
+    .Banner2-text h1 {
+      font-size: 48px;
+      letter-spacing: -0.48px;
+    }
+    .Banner2-text span {
+      font-size: 48px;
+      letter-spacing: -0.48px;
+    }
+    .Banner2-text button {
+      padding: 16px 48px;
     }
     .big-banner {
       display: flex;

@@ -845,6 +845,15 @@ body {
   line-height: 72px; /* 100% */
   letter-spacing: -0.72px;
 }
+.Banner2-text span {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: -0.72px;
+}
 .Banner2-text p {
   color: #787878;
   text-align: center;
@@ -869,6 +878,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
   gap: 24px;
   background: var(--Main-Black, #000);
 }
@@ -978,6 +988,5 @@ body {
   display: flex;
   width: 173px;
   justify-content: space-between;
-  align-items: flex-start;
-  padding-left: 160px;
+  align-items: center;
 }
