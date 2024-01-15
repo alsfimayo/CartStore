@@ -176,7 +176,7 @@ body {
 .sidebarmenu a {
   text-decoration: none;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 12px;
 }
 .sidebarmenu-button {
@@ -713,6 +713,7 @@ a i {
 
   align-items: flex-end;
   gap: 32px;
+  flex-wrap: wrap;
 }
 .Big-Banner-watch-products1 {
   display: flex;
@@ -768,6 +769,7 @@ a i {
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+  cursor: pointer;
 }
 .Big-Banner-watch-products2 {
   display: flex;
@@ -841,7 +843,7 @@ a i {
 .discount-products1 h4 {
   display: flex;
   width: 1440px;
-  padding: 80px 160px;
+  padding: 0px 160px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
@@ -1000,6 +1002,7 @@ a i {
   font-weight: 300;
   line-height: 32px; /* 228.571% */
   list-style: none;
+  cursor: pointer;
 }
 .footer-assistant {
   display: flex;
@@ -1025,6 +1028,7 @@ a i {
   font-weight: 300;
   line-height: 32px; /* 228.571% */
   list-style: none;
+  cursor: pointer;
 }
 .desktop-footer-icon {
   display: flex;

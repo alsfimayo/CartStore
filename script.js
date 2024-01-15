@@ -16,7 +16,7 @@ window.onload = function () {
 
 function openNav() {
   console.log("s");
-  document.getElementById("mySidenav").style.width = "px";
+  document.getElementById("mySidenav").style.width = "150px";
 }
 
 function closeNav() {
