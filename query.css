@@ -432,8 +432,9 @@
     width: 238px;
   }
   .sidebarmenu {
-    height: 688px;
-    width: 150px;
+    height: 100vh;
+
+    background-color: linear-gradient(91deg, #211c24 0.64%, #211c24 101%);
   }
   .discount-products1 h4 {
     padding: 0px 16px;
@@ -441,7 +442,7 @@
 
   .sidebarmenu a {
     /* padding: 50px; */
-    display: block;
+    /* display: block; */
   }
   font-awesome {
     display: flex;
