@@ -128,6 +128,7 @@ body {
   width: 0;
   transition: width 0.4s ease-in-out;
   flex-direction: column;
+
   /* padding: 24px 16px; */
 }
 .responsive-header {
@@ -298,6 +299,9 @@ body {
 
   letter-spacing: -0.96px;
 }
+a i {
+  padding-right: 12px;
+}
 .mabile-banner-text p {
   color: #909090;
   font-family: SF Pro Display;
@@ -408,21 +412,7 @@ body {
   flex: 1 0 0;
   align-self: stretch;
 }
-.bottom-left2 {
-  display: none;
-}
-.bottom-right2 {
-  display: none;
-}
-.wide-squre-two {
-  display: none;
-}
-.big-banner-img2 {
-  display: none;
-}
-.image-64-2 {
-  display: flex;
-}
+
 .wide-squre-bottom-left-text h1 {
   color: #000;
   font-family: SF Pro Display;
@@ -441,6 +431,7 @@ body {
 }
 .wide-squre-bottom-right {
   display: flex;
+
   background: #353535;
   width: 50%;
   gap: 16px;
@@ -821,6 +812,21 @@ body {
   height: 360px;
   width: 305px;
 }
+.bottom-left2 {
+  display: none;
+}
+.bottom-right2 {
+  display: none;
+}
+.wide-squre-two {
+  display: none;
+}
+.big-banner-img2 {
+  display: none;
+}
+.image-64-2 {
+  display: flex;
+}
 /* discount-products */
 .discount-products {
   display: flex;
@@ -831,6 +837,14 @@ body {
   align-items: flex-start;
   gap: 32px;
   background: #fff;
+}
+.discount-products1 h4 {
+  display: flex;
+  width: 1440px;
+  padding: 80px 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 /* Banner2 */
