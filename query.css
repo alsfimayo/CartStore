@@ -59,6 +59,13 @@
   .discount-products {
     padding: 56px 10px;
   }
+  .mabile-banner-text h1 {
+    font-size: 66px;
+    line-height: 102px;
+  }
+  .mobile-banner-span {
+    font-size: 72px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -111,6 +118,13 @@
   }
   .Big-Banner-watch-products2 {
     width: 45%;
+  }
+  .mabile-banner-text h1 {
+    font-size: 66px;
+    line-height: 102px;
+  }
+  .mobile-banner-span {
+    font-size: 72px;
   }
 }
 
@@ -431,19 +445,20 @@
   .desktop-footer-icon {
     width: 238px;
   }
-  .sidebarmenu {
+  /*.sidebarmenu {
     height: 100vh;
 
     background-color: linear-gradient(91deg, #211c24 0.64%, #211c24 101%);
-  }
+   } */
   .discount-products1 h4 {
     padding: 0px 16px;
+    font-size: 24px;
   }
 
-  .sidebarmenu a {
-    /* padding: 50px; */
-    /* display: block; */
-  }
+  /*  .sidebarmenu a {
+     padding: 50px; 
+     display: block; 
+  } */
   font-awesome {
     display: flex;
   }
@@ -452,5 +467,12 @@
   }
   .desktop-products-tags .active {
     font-size: 11px;
+  }
+  .responsive-header img {
+    padding-right: 58px;
+  }
+  .aliahmad a:hover {
+    background-color: black;
+    color: white;
   }
 }
