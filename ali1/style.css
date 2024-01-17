@@ -194,7 +194,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 12px;
   align-self: stretch;
 }
 
@@ -241,6 +241,9 @@ body {
 }
 .img3 {
   display: flex;
+  align-items: center;
+  /* gap: 99px; */
+  align-self: stretch;
 }
 .search-field1 {
   position: relative;
@@ -281,7 +284,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 24px;
+  gap: 12px;
   align-self: stretch;
 }
 .checbox-field a {
@@ -301,7 +304,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 12px;
   align-self: stretch;
 }
 .checbox-field1 a {
@@ -322,7 +325,7 @@ body {
   height: 244px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 12px;
   align-self: stretch;
 }
 .dropdown-pro {
@@ -331,6 +334,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
+  border-radius: 4px;
 }
 .dropdown-pro h1 {
   color: var(--Main-Black, #000);
@@ -561,4 +565,73 @@ body {
   width: 173px;
   justify-content: space-between;
   align-items: center;
+}
+.paginagion-counting {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+.paginagion-counting-one {
+  display: flex;
+  padding: 4px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  background: var(--Main-Black, #000);
+  color: var(--Main-White, #fff);
+}
+.paginagion-counting-one1 {
+  display: flex;
+  padding: 4px 11px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  background: #f6f6f6;
+}
+.checbox-field a h6 {
+  color: #929292;
+}
+.checbox-field1 a h6 {
+  color: #929292;
+}
+.line-svg1 {
+  width: 256px;
+  height: 0.5px;
+  position: absolute;
+  top: 324px;
+}
+.line-svg2 {
+  width: 256px;
+  height: 0.5px;
+  position: absolute;
+  top: 539px;
+}
+.line-svg4 {
+  width: 256px;
+  height: 0.5px;
+  position: absolute;
+  top: 1310px;
+}
+.line-svg5 {
+  width: 256px;
+  height: 0.5px;
+  position: absolute;
+  top: 1370px;
+}
+.line-svg6 {
+  width: 256px;
+  height: 0.5px;
+  position: absolute;
+  top: 1430px;
+}
+.line-svg7 {
+  width: 256px;
+  height: 0.5px;
+  position: absolute;
+  top: 1490px;
 }
