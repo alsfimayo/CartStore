@@ -767,7 +767,7 @@ i {
   gap: 8px;
   border-radius: 6px;
   border: 1px solid var(--Main-Black, #000);
-  color: var(--Main-Black, #000);
+  color: white;
   text-align: center;
   font-family: SF Pro Display;
   font-size: 16px;
@@ -985,7 +985,7 @@ i {
 }
 .footer-services {
   display: flex;
-  width: 295.5px;
+  /* width: 295.5px; */
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
