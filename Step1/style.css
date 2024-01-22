@@ -421,7 +421,7 @@ button {
 }
 .footer-services {
   display: flex;
-  /* width: 295.5px; */
+
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
