@@ -844,3 +844,9 @@ excellent > div {
   justify-content: space-between;
   align-items: center;
 }
+.colorswatch input {
+  visibility: hidden;
+}
+.colorswatch input:checked + label {
+  border: 1px solid;
+}

@@ -140,7 +140,7 @@ body {
 }
 .subnav-tags {
   display: flex;
-  width: 1440px;
+
   padding: 40px 160px;
   align-items: center;
   gap: 16px;
@@ -182,7 +182,7 @@ body {
   gap: 8px;
   flex: 1 0 0;
   opacity: 0.2;
-  width: 224px;
+  cursor: pointer;
 }
 .steps1 h3 {
   color: var(--Main-Black, #000);
@@ -210,7 +210,7 @@ body {
   gap: 8px;
   flex: 1 0 0;
   opacity: 0.2;
-  width: 224px;
+  cursor: pointer;
 }
 .steps-2 h3 {
   color: var(--Main-Black, #000);
@@ -236,7 +236,7 @@ body {
   align-items: center;
   gap: 8px;
   flex: 1 0 0;
-  width: 224px;
+  cursor: pointer;
 }
 .steps2 h3 {
   color: var(--Main-Black, #000);
@@ -258,7 +258,7 @@ body {
 }
 .content {
   display: flex;
-  width: 1440px;
+
   padding: 24px 160px 72px 160px;
   align-items: flex-start;
   gap: 96px;
@@ -284,7 +284,6 @@ body {
   letter-spacing: 0.6px;
 }
 .img-text {
-  width: 464px;
   display: flex;
   padding: 16px 0px 16px 16px;
   align-items: center;
@@ -306,10 +305,8 @@ body {
   justify-content: space-between;
   align-items: center;
   flex: 1 0 0;
-  width: 392px;
 }
 .apple {
-  width: 319px;
   align-self: stretch;
 }
 .apple h1 {
