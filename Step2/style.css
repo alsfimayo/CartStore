@@ -54,7 +54,7 @@ body {
 
 .search-field input[type="text"] {
   padding: 16px;
-  padding-left: 28px;
+  padding-left: 44px;
 
   background: #f5f5f5;
   border-radius: 8px;
@@ -77,7 +77,7 @@ body {
   width: 24px;
   height: 24px;
   position: absolute;
-  left: 2px;
+  left: 16px;
 }
 /* navigation css */
 .navigation {
@@ -85,14 +85,6 @@ body {
 
   align-items: flex-start;
   gap: 52px;
-}
-.built {
-  display: flex;
-  padding: 12px 0px;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-  border-radius: 4px;
 }
 
 .nav-list-items {
@@ -146,28 +138,20 @@ body {
   line-height: 32px; /* 200% */
   opacity: 0.5;
 }
-.subnav-tag {
+.subnav-tags {
   display: flex;
-  width: 1440px;
+
   padding: 40px 160px;
   align-items: center;
   gap: 16px;
 }
-.subnav-tag1 {
+.subnav-navigation-tags {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
   gap: 16px;
-}
-.subnav-tag1 a {
-  display: flex;
   align-items: center;
-
-  text-decoration: none;
-  gap: 16px;
 }
-.active-tag1 {
+.subnav-navigation-tags a {
+  text-decoration: none;
   color: #a4a4a4;
   font-family: SF Pro Display;
   font-size: 16px;
@@ -175,7 +159,7 @@ body {
   font-weight: 500;
   line-height: 16px; /* 100% */
 }
-.active-tag2 {
+.subnav-navigation-tags .active {
   color: #000;
   font-family: SF Pro Display;
   font-size: 16px;
@@ -183,304 +167,261 @@ body {
   font-weight: 500;
   line-height: 16px; /* 100% */
 }
-.desktop-content {
+.steps {
   display: flex;
-  width: 1440px;
-  padding: 24px 160px 56px 160px;
+  padding: 72px 160px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.steps1 {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+
+  opacity: 0.2;
+}
+.steps1 h3 {
+  color: var(--Main-Black, #000);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  /* 114.286% */
+  letter-spacing: 0.42px;
+}
+.steps1 h1 {
+  color: var(--Main-Black, #000);
+  font-family: "SF Pro Display";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+
+  letter-spacing: 0.57px;
+}
+.steps-2 {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+.steps-2 h3 {
+  color: var(--Main-Black, #000);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  /* 114.286% */
+  letter-spacing: 0.42px;
+}
+.steps-2 h1 {
+  color: var(--Main-Black, #000);
+  font-family: "SF Pro Display";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+
+  letter-spacing: 0.57px;
+}
+.steps2 {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  opacity: 0.2;
+}
+.steps2 h3 {
+  color: var(--Main-Black, #000);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  /* 114.286% */
+  letter-spacing: 0.42px;
+}
+.steps2 h1 {
+  color: var(--Main-Black, #000);
+  font-family: "SF Pro Display";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+
+  letter-spacing: 0.57px;
+}
+.content {
+  display: flex;
+
+  padding: 48px 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 224px;
+}
+.shipment-method {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-}
-.desktop-content-dropdown {
-  display: flex;
-  padding: 12px 0px;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-  border-radius: 4px;
-}
-.desktop-content-price {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
   align-self: stretch;
 }
-
-.desktop-content-dropdown h1 {
-  color: var(--Main-Black, #000);
-  font-family: SF Pro Display;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 133.333% */
-  letter-spacing: 0.54px;
-}
-.from-to {
-  display: flex;
-  padding: 12px 0px;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-}
-.from-to h1 {
-  color: var(--Main-Black, #a7a7a7);
-  font-family: SF Pro Display;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
-  letter-spacing: -0.07px;
-}
-.desktop-content-dropdown-from-to2 {
-  display: flex;
-  padding: 12px 0px;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-}
-.border {
-  display: flex;
-  padding: 8px 64px 8px 8px;
-  align-items: center;
-  gap: 8px;
-  border-radius: 3px;
-  border: 0.5px solid #9f9f9f;
-  background: #fff;
-}
-.img3 {
-  display: flex;
-  align-items: center;
-  /* gap: 99px; */
-  align-self: stretch;
-}
-.search-field1 {
-  position: relative;
-  border-radius: 8px;
-  background: #f5f5f5;
-  display: flex;
-
-  align-items: center;
-  gap: 8px;
-  width: 276px;
-}
-.search-field1 input[type="text"]::placeholder {
-  color: #656565;
-  font-family: SF Pro Display;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px; /* 128.571% */
-  opacity: 0.5;
-}
-.search-field1 input[type="text"] {
-  padding: 16px;
-  padding-left: 28px;
-
-  background: #f5f5f5;
-  border-radius: 8px;
-  border: none;
-  width: 100%;
-  height: 100%;
-}
-.search-icon {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: 2px;
-}
-.checbox-field {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
-  align-self: stretch;
-}
-.checbox-field a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  align-self: stretch;
-  text-decoration: none;
-  color: var(--Main-Black, #000);
-  font-family: SF Pro Display;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 160% */
-}
-.checbox-field1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  align-self: stretch;
-}
-.checbox-field1 a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  align-self: stretch;
-  text-decoration: none;
-  color: var(--Main-Black, #000);
-  font-family: SF Pro Display;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-}
-.dropdown1 {
-  display: flex;
-  height: 244px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  align-self: stretch;
-}
-.dropdown-pro {
-  display: flex;
-  padding: 12px 0px;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-  border-radius: 4px;
-}
-.dropdown-pro h1 {
-  color: var(--Main-Black, #000);
-  font-family: SF Pro Display;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 133.333% */
-  letter-spacing: 0.54px;
-}
-.desktop-content-img {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-}
-.left-side {
-  display: flex;
-  min-width: 200px;
-  /* align-items: flex-end; */
-  gap: 6px;
-  flex: 1 0 0;
-  padding: 12px 0px;
-}
-.left-side h1 {
-  color: #6c6c6c;
-  font-family: SF Pro Display;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px; /* 100% */
-  letter-spacing: 0.48px;
-}
-.left-side p {
-  color: #000;
-  text-align: center;
-  font-family: SF Pro Display;
+.shipment-method > h1 {
+  color: var(--Space-Cadet, #17183b);
+  font-family: "SF Pro Display";
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 16px; /* 80% */
-  letter-spacing: 0.6px;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
 }
-.desktop-prodcuts {
+.methods {
   display: flex;
-  width: 100%;
-
   flex-direction: column;
-  gap: 32px;
-  background: #fff;
-}
-.desktop-pair-products {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  align-items: flex-start;
   gap: 16px;
-
-  flex-wrap: wrap;
-  /* padding-left: 62px; */
+  align-self: stretch;
 }
-
-.desktop-pair-products-iphone {
+.methods1 {
   display: flex;
-  min-width: 200px;
-  padding: 24px 16px;
-  flex-direction: column;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 11px;
+  border: 1px solid #d1d1d8;
+}
+.methods1-text {
+  display: flex;
   align-items: center;
   gap: 16px;
   flex: 1 0 0;
-  border-radius: 9px;
-  background: #f6f6f6;
 }
-.desktop-pair-products-iphone .heart {
-  align-self: flex-end;
-}
-.desktop-pair-products-iphone .apple-iphone {
-  height: 160px;
-  width: 160px;
-}
-.desktop-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  align-self: stretch;
-}
-.desktop-text p {
+
+.free > h1 {
   color: var(--Main-Black, #000);
-  text-align: center;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
 }
-.desktop-text h3 {
-  color: var(--Main-Black, #000);
-  text-align: center;
-  font-family: SF Pro Display;
-  font-size: 24px;
+
+.ship > p {
+  color: #17183b;
+  font-family: "SF Pro Display";
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 24px; /* 100% */
-  letter-spacing: 0.72px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
-.desktop-pair-products-iphon {
+
+.date {
   display: flex;
-  min-width: 200px;
-  padding: 24px 16px;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  gap: 16px;
+  gap: 4px;
   flex: 1 0 0;
-  border-radius: 9px;
-  background: #f6f6f6;
 }
-.Iphone-btn {
+.date > h4 {
+  color: #17183b;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
+.schedule > h1 {
+  color: #a2a3b1;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
+.delivery > p {
+  color: #a2a3b1;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.select-date {
   display: flex;
-  padding: 12px 64px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
+}
+.select-date h4 {
+  color: #a2a3b1;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.btn1 {
+  display: flex;
+  padding: 24px 86px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 8px;
-  background: var(--Main-Black, #000);
-  color: var(--Main-White, #fff);
+  border-radius: 6px;
+  border: 1px solid var(--Main-Black, #000);
+  color: var(--Main-Black, #000);
+  cursor: pointer;
   text-align: center;
-  font-family: SF Pro Display;
-  font-size: 14px;
+  font-family: "SF Pro Display";
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  cursor: pointer;
+  text-transform: capitalize;
+  background-color: #fff;
+  /* width: 205px; */
+  /* height: 64px; */
+
+  line-height: 16px; /* 100% */
 }
-.pagination {
+.btn2 {
   display: flex;
+  padding: 24px 86px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--Main-Black, #000);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: black;
+  /* width: 205px; */
+  /* height: 64px; */
+  line-height: 16px; /* 100% */
 }
 .desktop-footer {
   display: flex;
@@ -555,7 +496,7 @@ body {
 }
 .footer-assistant {
   display: flex;
-  width: 295.5px;
+  /* width: 295.5px; */
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -584,73 +525,4 @@ body {
   width: 173px;
   justify-content: space-between;
   align-items: center;
-}
-.paginagion-counting {
-  display: flex;
-  align-items: center;
-
-  gap: 8px;
-}
-.paginagion-counting-one {
-  display: flex;
-  padding: 4px 12px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 5px;
-  background: var(--Main-Black, #000);
-  color: var(--Main-White, #fff);
-}
-.paginagion-counting-one1 {
-  display: flex;
-  padding: 4px 11px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 5px;
-  background: #f6f6f6;
-}
-.checbox-field a h6 {
-  color: #929292;
-}
-.checbox-field1 a h6 {
-  color: #929292;
-}
-.line-svg1 {
-  width: 256px;
-  height: 0.5px;
-  position: absolute;
-  top: 324px;
-}
-.line-svg2 {
-  width: 256px;
-  height: 0.5px;
-  position: absolute;
-  top: 539px;
-}
-.line-svg4 {
-  width: 256px;
-  height: 0.5px;
-  position: absolute;
-  top: 1310px;
-}
-.line-svg5 {
-  width: 256px;
-  height: 0.5px;
-  position: absolute;
-  top: 1370px;
-}
-.line-svg6 {
-  width: 256px;
-  height: 0.5px;
-  position: absolute;
-  top: 1430px;
-}
-.line-svg7 {
-  width: 256px;
-  height: 0.5px;
-  position: absolute;
-  top: 1490px;
 }
