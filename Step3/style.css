@@ -30,6 +30,7 @@ body {
 }
 .header-top img {
   padding-left: 16px;
+  cursor: pointer;
 }
 /* header logo */
 .logo {
@@ -137,6 +138,7 @@ body {
   font-weight: 500;
   line-height: 32px; /* 200% */
   opacity: 0.5;
+  cursor: default;
 }
 .subnav-tags {
   display: flex;
@@ -556,6 +558,10 @@ p {
   font-weight: 500;
   line-height: 16px; /* 100% */
 }
+.btn1 a {
+  text-decoration: none;
+  color: white;
+}
 .btn2 {
   width: 244.5px;
   display: flex;
@@ -614,6 +620,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: white;
+  cursor: pointer;
 }
 .desktop-footer-imgtext p {
   color: #cfcfcf;
@@ -680,4 +687,5 @@ p {
   width: 173px;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }

@@ -5,6 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Product Page2</title>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="query.css">
+      <link rel="stylesheet" href="script.js">
 </head>
 <body>
       <div class="container">
@@ -54,6 +56,69 @@
 
 
             </header>
+            <header class="responsive-header">
+                  <img src="/images/assets/Logo.svg" alt=""> 
+                 <button onclick="openNav()">
+                 
+                       <img src="/images/assets/hamburger.svg"" alt="">
+
+                 </button>
+                 <div id="mySidenav" class="sidebarmenu">
+                        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">closebtn</a>  -->
+                      <div class="logo-sidenav">
+
+                      <img src="/images/public/images/whitwlog.svg" alt="">
+                            
+                            
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+                       </div>
+                        <!-- <i class="fa-solid fa-bars"></i>  -->
+                      <div class="aliahmad">
+                         <a href="#">
+                          <i class="fa-brands fa-intercom"></i>
+                             <h4>Clients </h4>
+                         </a>
+                       
+
+
+                        <a href="#">
+                             <i class="fa-regular fa-address-book"></i>
+                              <h4>Contact</h4>
+
+                        </a>
+                             <a href="#"> 
+                             <i class="fa-sharp fa-light fa-eject"></i>
+                             <h4>About</h4>
+                        </a>
+                      
+                        <a href="#">
+                             <i class="fa-brands fa-servicestack"></i>
+                              <h4>Services</h4>
+                        </a>
+                        
+                       </div> 
+                    
+                
+                 </div>
+                       
+           </header>
+           <div class="sidebar-header">
+                 <div class="sidebar-header-content">
+                       <div class="crossBtn" id="crossBtn">
+                             <img src="/public/crossicon.svg" alt="">
+                       </div>
+                       <img src="/images/assets/Logo.svg" />
+                       <div class="sidebar-links">
+                             <a href="#" class="active">Home</a>
+                             <a href="#">Blog</a>
+                             <a href="#">Contact us</a>
+                             <a href="#">About</a>
+                       </div>
+                       <button class="side-bar-btn"> Services</button>
+
+                 </div>
+
+           </div>
             
       </div> 
 
@@ -83,8 +148,7 @@
                   Camera
             </div>
             <div>
-
-
+                        
                   <img src="/images/assets/icon-headphones.svg" alt="">
                   Headphones
             </div>
@@ -253,9 +317,15 @@
                   <h1>Reviews</h1>
                   <div class="Review-star">
                         <div class="rating">
-                              <p>4.8</p>
-                              <h4>of 125 reviews</h4>
-                              <img src="/images/public/images/stars.svg" alt="">
+                              <div class="rating">
+
+                                    <p>4.8</p>
+                                    <h4>of 125 reviews</h4>
+                              </div>
+                              <div>
+
+                                    <img src="/images/public/images/stars.svg" alt="">
+                              </div>
 
 
                         </div>
@@ -356,6 +426,7 @@
             
       </div>
       <div class="discount-Products">
+            
             <h1>Related Products</h1>
             <div class="discount-Products-img">
                   <div class="desktop-pair-products-iphone">
@@ -412,7 +483,7 @@
                         <li>Bounus Program</li>
                         <li>Gift cards</li>
                         <li>Credit and payment</li>
-                        <li>ervice contract</li>
+                        <li>Service contract</li>
                   <li>Non-cash account</li>
                   <li>Payment</li>li
             </div>

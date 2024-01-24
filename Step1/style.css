@@ -30,6 +30,7 @@ body {
 }
 .header-top img {
   padding-left: 16px;
+  cursor: pointer;
 }
 /* header logo */
 .logo {
@@ -137,6 +138,7 @@ body {
   font-weight: 500;
   line-height: 32px; /* 200% */
   opacity: 0.5;
+  cursor: default;
 }
 .subnav-tags {
   display: flex;
@@ -173,6 +175,9 @@ body {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+}
+.steps a {
+  text-decoration: none;
 }
 .steps1 {
   display: flex;
@@ -309,6 +314,23 @@ button {
   border-radius: 4px;
   background: var(--Main-Black, #000);
 }
+Button1 {
+  color: #fff;
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  border-radius: 4px;
+  background: white;
+}
 .info {
   display: flex;
   padding-left: 47px;
@@ -333,14 +355,18 @@ button {
   flex-wrap: wrap;
 }
 .btn1 {
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.btn1 a {
   display: flex;
   padding: 24px 86px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 6px;
+  /* border-radius: 6px;
   border: 1px solid var(--Main-Black, #000);
-  color: var(--Main-Black, #000);
+  color: var(--Main-Black, #000); */
   cursor: pointer;
   text-align: center;
   font-family: "SF Pro Display";
@@ -354,7 +380,12 @@ button {
 
   line-height: 16px; /* 100% */
 }
-.btn2 {
+.btn1 a {
+  text-decoration: none;
+
+  color: black;
+}
+.btn2 a {
   display: flex;
   padding: 24px 86px;
   justify-content: center;
@@ -375,7 +406,9 @@ button {
   height: 64px;
   line-height: 16px; /* 100% */
 }
-
+.btn2 a {
+  text-decoration: none;
+}
 .desktop-footer {
   display: flex;
   width: 100%;
@@ -412,6 +445,7 @@ button {
   justify-content: center;
   align-items: center;
   background-color: white;
+  cursor: pointer;
 }
 .desktop-footer-imgtext p {
   color: #cfcfcf;
@@ -478,6 +512,7 @@ button {
   width: 173px;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 .text {
   display: flex;

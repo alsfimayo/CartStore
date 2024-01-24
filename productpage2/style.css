@@ -30,6 +30,7 @@ body {
 }
 .header-top img {
   padding-left: 16px;
+  cursor: pointer;
 }
 /* header logo */
 .logo {
@@ -114,6 +115,130 @@ body {
   display: flex;
   border-radius: 4px;
 }
+.sidebarmenu {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  width: 0;
+  transition: width 0.4s ease-in-out;
+  flex-direction: column;
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  /* transition: 0.5; */
+}
+.aliahmad a:hover {
+  background-color: black;
+  color: white;
+}
+
+.responsive-header {
+  display: none;
+}
+.responsive-header img {
+  cursor: pointer;
+  padding-right: 98px;
+}
+
+.sidebar-header {
+  width: 100%;
+  height: 35vh;
+  padding: 15px;
+  position: fixed;
+  top: 15px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-400px);
+  /* right: 0; */
+}
+.sidebar-header-content img {
+  height: 60px;
+  width: 100px;
+}
+.active-sidebar {
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
+}
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.crossBtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.crossBtn img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.sidebarmenu-button {
+  border-radius: 8px;
+  background: var(--Main-Black, #000);
+  padding: 9px 16px;
+  color: var(--Main-White, #fff);
+
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+
+.sidebarmenu a.active {
+  opacity: 1;
+  color: var(--Main-Black, #000);
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sidebarmenu a {
+  opacity: 0.3;
+  color: var(--Main-Black, #9d9393);
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 15px;
+  text-decoration: none;
+  display: flex;
+  /* flex-direction: column; */
+  padding: 12px;
+  align-items: center;
+}
+/*.sidebarmenu a:hover {
+  background-color: aquamarine;
+ } */
+.sidebarmenu .closebtn {
+  font-size: 52px;
+  color: #fff;
+  padding: 0px 8px;
+}
+
+.logo-sidenav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8px;
+}
+i {
+  padding-right: 15px;
+}
 .subnav {
   background: var(--Secondary-Charcoal, #2e2e2e);
 
@@ -137,10 +262,11 @@ body {
   font-weight: 500;
   line-height: 32px; /* 200% */
   opacity: 0.5;
+  cursor: default;
 }
 .subnav-tags {
   display: flex;
-  width: 1440px;
+
   padding: 40px 160px;
   align-items: center;
   gap: 16px;
@@ -149,6 +275,7 @@ body {
   display: flex;
   gap: 16px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .subnav-navigation-tags a {
   text-decoration: none;
@@ -169,14 +296,14 @@ body {
 }
 .main-info {
   display: flex;
-  width: 1440px;
+  width: 100%;
   padding: 112px 160px;
   align-items: center;
   gap: 48px;
 }
 .main-info-images {
   display: flex;
-  width: 536px;
+
   align-items: center;
   gap: 48px;
   flex-shrink: 0;
@@ -188,6 +315,7 @@ body {
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+  width: 100%;
 }
 .main-info-text h1 {
   color: #000;
@@ -343,12 +471,12 @@ body {
 }
 .btn1 {
   display: flex;
-  min-width: 136px;
+
   padding: 16px 56px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  flex: 1 0 0;
+
   background-color: white;
   color: var(--Main-Black, #000);
   text-align: center;
@@ -363,12 +491,12 @@ body {
 }
 .btn2 {
   display: flex;
-  min-width: 136px;
+
   padding: 16px 56px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  flex: 1 0 0;
+
   color: var(--Main-White, #fff);
   background-color: #000;
   text-align: center;
@@ -488,7 +616,7 @@ body {
 }
 .Reviews {
   display: flex;
-  width: 1440px;
+
   padding: 88px 160px;
   flex-direction: column;
   align-items: center;
@@ -517,7 +645,6 @@ body {
   align-content: center;
   gap: 60px;
   align-self: stretch;
-  flex-wrap: wrap;
 }
 .rating {
   display: flex;
@@ -556,7 +683,7 @@ body {
 }
 .rating-reviews {
   display: flex;
-  min-width: 390px;
+
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
@@ -656,7 +783,7 @@ excellent > div {
 }
 .discount-Products {
   display: flex;
-  width: 1440px;
+
   padding: 80px 160px;
   flex-direction: column;
   align-items: flex-start;
@@ -664,7 +791,7 @@ excellent > div {
 }
 .discount-Products-img {
   display: flex;
-  min-width: 200px;
+
   align-items: flex-start;
   align-content: flex-start;
   gap: 16px;
@@ -674,7 +801,7 @@ excellent > div {
 
 .desktop-pair-products-iphone {
   display: flex;
-  min-width: 200px;
+
   padding: 24px 16px;
   flex-direction: column;
   align-items: center;
@@ -771,12 +898,13 @@ excellent > div {
 }
 .desktop-footer-imgtext img {
   display: flex;
-  width: 96px;
+  /* width: 96px; */
   height: 32px;
   padding: 0px 0.047px 3.72px 0px;
   justify-content: center;
   align-items: center;
   background-color: white;
+  cursor: pointer;
 }
 .desktop-footer-imgtext p {
   color: #cfcfcf;
@@ -843,6 +971,7 @@ excellent > div {
   width: 173px;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 .colorswatch input {
   visibility: hidden;

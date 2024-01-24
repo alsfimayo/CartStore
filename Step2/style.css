@@ -30,6 +30,7 @@ body {
 }
 .header-top img {
   padding-left: 16px;
+  cursor: pointer;
 }
 /* header logo */
 .logo {
@@ -137,6 +138,7 @@ body {
   font-weight: 500;
   line-height: 32px; /* 200% */
   opacity: 0.5;
+  cursor: default;
 }
 .subnav-tags {
   display: flex;
@@ -383,6 +385,10 @@ body {
   align-self: stretch;
   flex-wrap: wrap;
 }
+.btn1 a {
+  text-decoration: none;
+  color: black;
+}
 .btn1 {
   display: flex;
   padding: 24px 86px;
@@ -404,6 +410,10 @@ body {
   /* height: 64px; */
 
   line-height: 16px; /* 100% */
+}
+.btn2 a {
+  text-decoration: none;
+  color: white;
 }
 .btn2 {
   display: flex;
@@ -462,6 +472,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
+  cursor: pointer;
 }
 .desktop-footer-imgtext p {
   color: #cfcfcf;
@@ -528,4 +539,5 @@ body {
   width: 173px;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
