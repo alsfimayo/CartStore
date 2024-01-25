@@ -5,6 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Products page1</title>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="query.css">
+      <script src="script.js"></script>
 </head>
 <body>
       <div class="container">
@@ -54,6 +56,66 @@
 
 
             </header>
+            <header class="responsive-header">
+                  <img src="/images/assets/Logo.svg" alt=""> 
+                 <button onclick="openNav()">
+                 
+                       <img src="/images/assets/hamburger.svg"" alt="">
+
+                 </button>
+                 <div id="mySidenav" class="sidebarmenu">
+                        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">closebtn</a>  -->
+                      <div class="logo-sidenav">
+
+                      <img src="/images/public/images/whitwlog.svg" alt="">
+                            
+                            
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+                       </div>
+                        <!-- <i class="fa-solid fa-bars"></i>  -->
+                      <div class="aliahmad">
+                         <a href="#">
+                          <i class="fa-brands fa-intercom"></i>
+                             <h4>Clients </h4>
+                         </a>
+                       
+
+
+                        <a href="#">
+                             <i class="fa-regular fa-address-book"></i>
+                              <h4>Contact</h4>
+
+                        </a>
+                             <a href="#"> 
+                             <i class="fa-sharp fa-light fa-eject"></i>
+                             <h4>About</h4>
+                        </a>
+                      
+                        <a href="#">
+                             <i class="fa-brands fa-servicestack"></i>
+                              <h4>Services</h4>
+                        </a>
+                       </div>
+                 </div>
+           </header>
+           <div class="sidebar-header">
+                 <div class="sidebar-header-content">
+                       <div class="crossBtn" id="crossBtn">
+                             <img src="/images/public/crossicon.svg" alt="">
+                       </div>
+                       <img src="/images/assets/Logo.svg" />
+                       <div class="sidebar-links">
+                             <a href="#" class="active">Home</a>
+                             <a href="#">Blog</a>
+                             <a href="#">Contact us</a>
+                             <a href="#">About</a>
+                       </div>
+                       <button class="side-bar-btn"> Services</button>
+
+                 </div>
+
+           </div>
+     </div> 
             
       </div> 
 
@@ -99,6 +161,10 @@
 
 
 
+      </div>
+      <div class="Filter">
+            <img src="/images/public/images/icon-32-px-arrow.svg" alt="">
+            <h1>Filters</h1>
       </div>
 
   <div class="subnav-tag">
@@ -217,6 +283,7 @@
 
                               <h4>Built-in memory</h4>
                               <img src="/images/public/images/expand-down.svg" alt="" class="line-svg3">
+                              <img src="/images/public/images/line.svg" alt="" class="line-svg3">
                         </div>
 
                         <div class="search-field1">
@@ -300,10 +367,13 @@
                                     
                               
                         </div>
+                       
                              
 
 
                   </div>
+                  
+                  <div class="apply-btn">apply</div>
 
             </div>
             <div class="desktop-content-img">
