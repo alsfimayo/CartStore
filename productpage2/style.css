@@ -476,6 +476,7 @@ i {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  text-transform: uppercase;
 
   background-color: white;
   color: var(--Main-Black, #000);
@@ -508,6 +509,11 @@ i {
   border-radius: 6px;
   border: 1px solid var(--Main-Black, #000);
   cursor: pointer;
+}
+.btn2 a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
 .icon {
   display: flex;

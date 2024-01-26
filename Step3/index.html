@@ -5,6 +5,8 @@
       <meta name="viewport" content="width=j, initial-scale=1.0">
       <title>Step3</title>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="query.css">
+      <script src="script.js"></script>
 </head>
 <body>
       <div class="container">
@@ -29,7 +31,7 @@
 
                         <li><a href="/index.html">Home</a></li>
 
-                        <li><a href="/productspage1">About</a></li>
+                        <li><a href="">About</a></li>
                         <li><a href="/productpage2">Contact us</a></li>
                         <li><a href="/Step1">Blog</a></li>
 
@@ -54,10 +56,68 @@
 
 
             </header>
+            <header class="responsive-header">
+                  <img src="/images/assets/Logo.svg" alt=""> 
+                  <button onclick="openNav()">
+                        <img src="/images/assets/hamburger.svg"" alt="">
+
+                  </button>
+                  <div id="mySidenav" class="sidebarmenu">
+                         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">closebtn</a>  -->
+                       <div class="logo-sidenav">
+
+                       <img src="/images/public/images/whitwlog.svg" alt="">
+                             
+                             
+                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+                        </div>
+                         <!-- <i class="fa-solid fa-bars"></i>  -->
+                       <div class="aliahmad">
+                          <a href="#">
+                           <i class="fa-brands fa-intercom"></i>
+                              <h4>Clients </h4>
+                          </a>
+                        
+
+
+                         <a href="#">
+                              <i class="fa-regular fa-address-book"></i>
+                               <h4>Contact</h4>
+
+                         </a>
+                              <a href="#"> 
+                              <i class="fa-sharp fa-light fa-eject"></i>
+                              <h4>About</h4>
+                         </a>
+                       
+                         <a href="#">
+                              <i class="fa-brands fa-servicestack"></i>
+                               <h4>Services</h4>
+                         </a>
+                        </div>
+                  </div>
+            </header>
+            <div class="sidebar-header">
+                  <div class="sidebar-header-content">
+                        <div class="crossBtn" id="crossBtn">
+                              <img src="/images/public/crossicon.svg" alt="">
+                        </div>
+                        <img src="/images/assets/Logo.svg" />
+                        <div class="sidebar-links">
+                              <a href="#" class="active">Home</a>
+                              <a href="#">Blog</a>
+                              <a href="#">Contact us</a>
+                              <a href="#">About</a>
+                        </div>
+                        <button class="side-bar-btn"> Services</button>
+
+                  </div>
+
+            </div>
             
       </div> 
 
-
+<a href="/productspage1/">
       <div class="subnav">
             <div>
 
@@ -100,7 +160,7 @@
 
 
       </div>
-
+</a>
 <div class="steps">
       <div class="steps1">
             <img src="/images/public/images/icon-24-px-location.svg" alt="">
@@ -111,7 +171,7 @@
             </div>
             
       </div>
-      <img src="/images/public/images/step-line.svg" alt="">
+      <img src="/images/public/images/step-line.svg" alt="" class="step1-img">
       <div class="steps-2">
             <img src="/images/public/images/icon-24-px-shipping.svg" alt="">
             <div>
@@ -122,7 +182,7 @@
             </div>
             
       </div>
-      <img src="/images/public/images/step-line.svg" alt="">
+      <img src="/images/public/images/step-line.svg" alt="" class="steps-2-img">
       <div class="steps2">
             <img src="/images/public/images/icon-24-px-payment.svg" alt="">
             <div>

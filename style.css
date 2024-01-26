@@ -769,7 +769,7 @@ i {
   gap: 8px;
   border-radius: 6px;
   border: 1px solid var(--Main-Black, #000);
-  color: white;
+  color: black;
   text-align: center;
   font-family: SF Pro Display;
   font-size: 16px;

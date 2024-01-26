@@ -665,11 +665,11 @@ p {
 .btn1 {
   width: 244.5px;
   display: flex;
-  padding: 24px 86px;
+  padding: 20px 86px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  flex: 1 0 0;
+  /* flex: 1 0 0; */
   border-radius: 6px;
   border: 1px solid var(--Main-Black, #000);
 }
@@ -693,7 +693,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  flex: 1 0 0;
+  /* flex: 1 0 0; */
   border-radius: 6px;
   background: var(--Main-Black, #000);
 

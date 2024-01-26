@@ -51,25 +51,31 @@
     display: flex;
     padding: 32px 16px;
   }
-  .step-1 {
-    width: 33%;
+  .steps1 {
+    display: none;
   }
   .step1-img {
-    width: 33%;
-  }
-  .step-2 {
-    width: 33%;
-  }
-  .step2-img {
     display: none;
   }
-  .steps3 {
-    display: none;
+
+  .steps-2 {
+    width: 33%;
+  }
+  .steps-2-img {
+    width: 33%;
+  }
+  .steps2 {
+    width: 33%;
   }
   .content {
     display: flex;
     width: 100%;
     padding: 32px 16px;
+  }
+  .methods1-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
   .address-home1 {
     width: 100%;
@@ -83,6 +89,7 @@
   }
   .btn1 {
     width: 50%;
+    padding: 0px;
   }
   .btn2 {
     width: 50%;
