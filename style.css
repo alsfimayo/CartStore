@@ -529,6 +529,10 @@ i {
   font-weight: 500;
   line-height: 24px; /* 150% */
 }
+.mobile-banner-btn a {
+  text-decoration: none;
+  color: #fff;
+}
 
 /* sidebar menu styles */
 
@@ -777,6 +781,10 @@ i {
   font-weight: 500;
   line-height: 24px; /* 150% */
   cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 .Big-Banner-watch-products2 {
   display: flex;
