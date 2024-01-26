@@ -6,13 +6,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .desktop-prodcuts {
-    padding: 56px 10px;
-  }
-  .discount-products1 h4 {
-    padding: 56px 10px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -25,15 +18,7 @@
   .responsive-header img {
     padding: 0px;
   }
-  .shopping-cart-banner {
-    padding: 20px;
-    width: 100%;
-  }
-  .whole-cart-content {
-    display: flex;
 
-    flex-direction: column;
-  }
   .desktop-footer {
     display: flex;
     width: 100%;
@@ -61,117 +46,55 @@
   .subnav {
     display: none;
   }
-  .shopping-cart-banner {
-    padding: 24px 16px;
+  .steps {
     width: 100%;
-  }
-
-  .whole-cart-content {
-    width: 100%;
-    flex-direction: column;
-  }
-  .text-counting {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-
-    width: 80%;
+    padding: 32px 16px;
   }
-  .shopping-cart-box1 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  .step-1 {
+    width: 33%;
   }
-  .label-field {
-    width: 100%;
+  .step1-img {
+    width: 33%;
   }
-  .code {
-    width: 100%;
+  .step-2 {
+    width: 33%;
   }
-
-  .order-summary {
-    display: flex;
-    padding: 56px 16px;
-    width: 100%;
-  }
-
-  .desktop-content {
-    padding: 24px 16px;
-  }
-  .desktop-content-img {
+  .step2-img {
     display: none;
   }
-  .desktop-content-price {
-    width: 100%;
+  .steps3 {
+    display: none;
   }
-  .img3 img {
-    width: 100%;
-  }
-  .apply-btn {
+  .content {
     display: flex;
-
-    padding: 12px 64px;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    gap: 8px;
-    border-radius: 8px;
-    background: var(--Main-Black, #000);
-    color: var(--Main-White, #fff);
+    padding: 32px 16px;
+  }
+  .address-home1 {
+    width: 100%;
+  }
+  .new-line img {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .btn1 {
+    width: 50%;
+  }
+  .btn2 {
+    width: 50%;
+  }
+  .btn2 a {
+    width: 50%;
+  }
+  .btn1 a {
+    padding: 24px 16px;
+    width: 50%;
+  }
 
-    text-align: center;
-    font-family: "SF Pro Display";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 171.429% */
-  }
-  .line-svg1 {
-    width: 256px;
-    height: 0.5px;
-    position: absolute;
-    top: 247px;
-  }
-  .line-svg2 {
-    width: 256px;
-    height: 0.5px;
-    position: absolute;
-    top: 470px;
-  }
-  .line-svg3 {
-    width: 256px;
-    height: 0.5px;
-    position: absolute;
-    top: 888px;
-  }
-  .line-svg4 {
-    width: 256px;
-    height: 0.5px;
-    position: absolute;
-    top: 1233px;
-  }
-  .line-svg5 {
-    width: 256px;
-    height: 0.5px;
-    position: absolute;
-
-    top: 1296px;
-  }
-  .line-svg6 {
-    width: 256px;
-    height: 0.5px;
-    position: absolute;
-
-    top: 1359px;
-  }
-  .line-svg7 {
-    width: 256px;
-    height: 0.5px;
-    position: absolute;
-
-    top: 1422px;
-  }
   .desktop-footer {
     width: 100%;
     gap: 32px;
@@ -210,20 +133,12 @@
   .desktop-footer-icon {
     width: 238px;
   }
-  /*.sidebarmenu {
-                    height: 100vh;
-                
-                    background-color: linear-gradient(91deg, #211c24 0.64%, #211c24 101%);
-                   } */
+
   .discount-products1 h4 {
     padding: 0px 16px;
     font-size: 24px;
   }
 
-  /*  .sidebarmenu a {
-                     padding: 50px; 
-                     display: block; 
-                  } */
   font-awesome {
     display: flex;
   }
