@@ -6,7 +6,7 @@
       <title>Product Page2</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="query.css">
-      <script src="script.js"></script>
+      <!-- <script src="script.js"></script> -->
 </head>
 <body>
       <div class="container">
@@ -46,7 +46,14 @@
                               </svg>
                         </span> -->
                        <a href="/Step2"> <img src="/images/public//images/heart.svg" alt=""></a>
-                        <a href="/shoppingCart"><img src="/images//public/images/icon-32-px-cart-1.svg" alt=""></a>
+                        <a href="/shoppingCart">
+                              <span id="cart" class=""></span>
+                              <img src="/images//public/images/icon-32-px-cart-1.svg" alt="" id="cartproduct" ></a>
+                        
+                             
+                        
+                            
+                            
                        <a href="/Step3"> <img src="/images/public//images/icon-32-px-user.svg" alt=""></a>
 
 
@@ -172,7 +179,7 @@
                   <a href="#">Apple</a>
                   <img src="/images/public/images/icon-24-px-arrow.svg" alt="">
                   <a href="#" class="active">iPhone 14 Pro Max</a>
-            </div>
+            </div>s
       </div>
       <div class="main-info">
             <div class="main-info-images">
@@ -189,29 +196,17 @@
                         <h1>Select colors :</h1>
                         <span class = "colorswatch">
                               <input type = "checkbox" id = "red">
-                              <label for = "red">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                          <circle cx="16" cy="16" r="16" fill="black"/>
-                                    </svg>
-                              </label>
+                              <label for = "red"></label>
+                              <input type="checkbox" id="blue">
+                              <label for="blue"></label>
+                              <input type="checkbox"  id="black">
+                              <label for="red"></label>
+                              <input type="checkbox" id="yellow">
+                              <label for="yellow"></label>
+                              <input type="checkbox" id="white">
+                              <label for="white"></label>
 
                         </span>
-                        
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                              <circle cx="16" cy="16" r="16" fill="#781DBC"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                              <circle cx="16" cy="16" r="16" fill="#E10000"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                              <circle cx="16" cy="16" r="16" fill="#E1B000"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                              <circle cx="16" cy="16" r="16" fill="#E8E8E8"/>
-                            </svg>
-
-
                   </div>
                   <div class="Tab">
                         <p class="Tab1">128GB</p>
@@ -247,8 +242,19 @@
                   </div>
                   <div class="button">
                         <button class="btn1">Add to wishlist</button>
-                        <button class="btn2"><a href="/shoppingCart">Add to Cart</button></a>
+                        <!-- <button class="btn2" onclick="addtoCart()">Add to Cart</button> -->
+                        <button class="btn2" onclick="addToCart()">Add to Cart</button>
+
+                        
                   </div>
+                  <!-- <div class="button">
+                        <button class="btn1">Add to wishlist</button>
+                        <button class="btn2" onclick="addtoCart()"><a href="/shoppingCart">Add to Cart</button></a>
+                        <div>
+                              <p id="cartproduct "></p>
+                        </div>
+                      
+                  </div> -->
                   <div class="icon">
                         <div>
 
@@ -502,6 +508,36 @@
             </div>
             
       </div>
+      src="/images/public/images/icon-32-px-cart-1.svg" alt="" id="cartproduct">
+    </a>
+
+
+    <script>
+          
+      
+        function addToCart() {
+             var cartValue = localStorage.getItem("products");
+             console.log(cartValue)
+
+            if (!cartValue) {
+                cartValue = 1;
+            } else {
+                cartValue = Number(cartValue) + 1;
+            }
+
+            localStorage.setItem("products", cartValue);
+           window.location.reload()
+        }
+
+        function showTotalCartOfProduct() {
+            var cartValue = localStorage.getItem("products");
+            const cart = document.getElementById("cart");
+            cart.innerText = cartValue;
+        }
+
+      
+        showTotalCartOfProduct();
+    </script>
 
 </body>
 </html>

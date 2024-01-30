@@ -230,7 +230,12 @@ body {
   color: #fff;
   padding: 0px 8px;
 }
+#cart {
+  position: absolute;
+  top: 8px;
 
+  right: 209px;
+}
 .logo-sidenav {
   display: flex;
   justify-content: space-between;
@@ -982,6 +987,53 @@ excellent > div {
 .colorswatch input {
   visibility: hidden;
 }
+
 .colorswatch input:checked + label {
   border: 1px solid;
+}
+#red + label {
+  width: 32px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: red; /* red color */
+  border-radius: 50%; /* Create a circular shape */
+  position: relative;
+}
+#yellow + label {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: yellow; /* Yellow color */
+  border-radius: 50%; /* Create a circular shape */
+  position: relative;
+}
+#blue + label {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: blue; /* Yellow color */
+  border-radius: 50%; /* Create a circular shape */
+  position: relative;
+}
+#white + label {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #f6f6f6; /* Yellow color */
+  border-radius: 50%; /* Create a circular shape */
+  position: relative;
+}
+#black + label {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 50%; /* Create a circular shape */
+  position: relative;
 }
