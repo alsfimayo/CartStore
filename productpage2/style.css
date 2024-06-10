@@ -232,9 +232,10 @@ body {
 }
 #cart {
   position: absolute;
-  top: 8px;
-
-  right: 209px;
+  top: -13px;
+  color: black;
+  right: -10px;
+  font-size: 14px;
 }
 .logo-sidenav {
   display: flex;
@@ -244,6 +245,10 @@ body {
 i {
   padding-right: 15px;
 }
+.ali {
+  position: relative;
+}
+
 .subnav {
   background: var(--Secondary-Charcoal, #2e2e2e);
 
